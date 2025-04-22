@@ -278,11 +278,19 @@
         }
         
         footer {
-            background-color: #444;
+            background-color:var(--light-bg);
+            color: white;
             padding: 20px 0;
-            color: #6c757d;
             font-size: 0.9rem;
+            text-align: center;
+            transition: background-color var(--transition-speed), color var(--transition-speed);
         }
+        
+        .dark-mode footer {
+            background-color: var(--card-dark-bg);
+            color: var(--text-dark);
+        }
+        
         
         .dark-mode {
             background-color: var(--dark-bg);
@@ -323,7 +331,6 @@
             color: #e0e0e0;
         }
         
-        /* Switch for dark mode */
         .switch {
             position: relative;
             display: inline-block;
@@ -382,7 +389,6 @@
             right: auto;
         }
         
-        /* Scrollbar */
         ::-webkit-scrollbar {
             width: 10px;
         }
@@ -400,7 +406,6 @@
             background: #555;
         }
         
-        /* Animation classes */
         .fade-in {
             animation: fadeIn 1s ease forwards;
         }
@@ -410,7 +415,6 @@
             to { opacity: 1; }
         }
         
-        /* Typing animation for intro text */
         .typing-animation {
             border-right: 3px solid transparent;
             white-space: nowrap;
@@ -439,7 +443,6 @@
             to { width: var(--progress-width); }
         }
         
-        /* Responsive adjustments */
         @media (max-width: 768px) {
             .intro-section {
                 flex-direction: column;
@@ -455,7 +458,7 @@
             
             .profile-img {
                 width: 180px;
-                height: 180px;
+                height: 75px;
             }
             
             .intro-text h2 {

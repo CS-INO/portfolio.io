@@ -331,6 +331,7 @@
             color: #e0e0e0;
         }
         
+        /* Switch for dark mode */
         .switch {
             position: relative;
             display: inline-block;
@@ -457,8 +458,8 @@
             }
             
             .profile-img {
-                width: 180px;
-                height: 75px;
+                width: 200px;
+                height: 250px;
             }
             
             .intro-text h2 {
